@@ -1,0 +1,14 @@
+.bestseller {
+  padding-bottom: rem(100);
+}
+
+.bestseller__title {
+  padding-bottom: rem(48);
+}
+
+.bestseller__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  gap: rem(48) rem(24);
+  align-items: flex-start;
+}

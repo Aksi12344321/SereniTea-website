@@ -1,0 +1,37 @@
+.tagline {
+  position: relative;
+  padding: rem(8) rem(15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(12);
+  background-color: #141718;
+  color: #fff;
+  font-family: var(--font-main);
+
+  a {
+    color: var(--tagline-link);
+  }
+}
+
+.tagline__desc {
+  font-size: rem(14);
+  font-weight: 600;
+  line-height: rem(22);
+}
+
+.tagline__link {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: rem(22);
+  display: flex;
+  gap: rem(4);
+  align-items: center;
+  border-bottom: rem(1) solid var(--yellow);
+}
+
+.tagline__close {
+  position: absolute;
+  top: rem(10);
+  right: rem(16);
+}

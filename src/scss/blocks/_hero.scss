@@ -1,0 +1,49 @@
+.hero {
+  height: rem(820);
+  background-color: #f7f7f7;
+  background-image: url("./../img/hero/bg.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mediaBg() {
+    background-image: url("./../img/hero/bg@2x.jpg");
+  }
+}
+
+.hero__container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; // ⬅️ прижимаем контент вправо
+  align-items: center; // ⬆️ центр по вертикали
+  transform: translateY(#{rem(-20)}) translateX(#{rem(40)}); // вверх и вправо
+}
+.hero__content {
+  max-width: rem(538);
+  height: 100%; //Т.к. у .hero задана высота
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // центр по вертикали
+  gap: rem(27);
+}
+
+.hero__title {
+  margin-bottom: rem(8);
+  color: #000;
+  font-size: rem(80);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: rem(-3);
+  font-family: var(--font-accent);
+
+  span {
+    color: #4c7a02;
+  }
+}
+
+.hero__desc {
+  margin-bottom: rem(28);
+  color: #121212;
+  font-size: rem(20);
+  line-height: 1.6;
+}

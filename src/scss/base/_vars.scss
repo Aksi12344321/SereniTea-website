@@ -1,34 +1,30 @@
 :root {
-  --container-width: #{rem(1200)};
-  --container-padding: #{rem(15)};
+  --container-width: #{rem(1184)};
+  --container-padding: #{rem(32)};
 
-  /*  @include laptop {
-    --container-width: #{rem(1280)};
-  } */
-
-  --font-main: sans-serif;
-  --font-accent: "Manrope", sans-serif;
-  --font-titles: var(--font-accent);
+  --font-main: "Inter", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+  --font-nav: "Space Grotesk", sans-serif;
 
   --page-bg: #fff;
   --text-color: #000;
   --accent: #ac182c;
-  --link-color: #2578c8;
 
-  --laptop-size: #{rem(1200)};
-  --tablet-size: #{rem(959)};
-  --mobile-size: #{rem(599)};
+  --laptop-size: rem(1199);
+  --tablet-size: rem(959);
+  --mobile-size: rem(599);
 
-  --border: #{rem(1)} solid var(--color-dark-15);
-
-  --transition-duration: 0.2s;
-
-  --gradient: linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%);
-
-  --100vw: calc(100vw - var(--scrollbar-width));
+  --yellow: #4c7a02;
+  --tagline-link: #4c7a02;
 }
 
 .dark {
   --page-bg: #252526;
   --text-color: #fff;
+}
+
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
 }

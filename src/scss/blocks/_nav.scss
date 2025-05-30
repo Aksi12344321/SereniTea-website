@@ -1,11 +1,51 @@
-.header__nav {
-}
 .nav {
-	font-size: 18px;
+  padding: rem(16) 0;
+  background-color: #e0dede;
 }
+
+.nav__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav__list {
-	display: flex;
-	column-gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: rem(40);
 }
-.active {
+
+.nav__link {
+  display: flex;
+  gap: rem(2);
+  align-items: center;
+
+  color: #141718;
+}
+
+.nav__btns {
+  display: flex;
+  gap: rem(17);
+  align-items: center;
+}
+
+.nav__btn {
+  display: flex;
+  align-items: center;
+  gap: rem(5);
+}
+
+.nav__btn-count {
+  display: inline-block;
+  width: rem(20);
+  height: rem(20);
+
+  border-radius: 50%;
+  background-color: #141718;
+
+  font-size: rem(12);
+  line-height: rem(20);
+  font-weight: 700;
+  color: var(--yellow);
+  text-align: center;
 }

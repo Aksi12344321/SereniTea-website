@@ -1,0 +1,20 @@
+.values {
+  padding: rem(40) 0;
+}
+
+// .values__grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+//     gap: 24px;
+// }
+
+.values__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(24);
+
+  & > * {
+    flex: 1;
+    min-width: rem(262);
+  }
+}

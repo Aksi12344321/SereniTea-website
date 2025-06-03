@@ -41,6 +41,12 @@
 
   word-wrap: break-word; // разрешает перенос слов
   white-space: normal; // чтобы не было nowrap
+
+  @include tablet {
+    left: rem(20);
+    right: rem(20);
+    bottom: rem(20);
+  }
 }
 
 .plate--tall {

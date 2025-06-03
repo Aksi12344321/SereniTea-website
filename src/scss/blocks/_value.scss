@@ -1,0 +1,19 @@
+.value {
+  padding: rem(48) rem(32);
+  background-color: #f3f5f7;
+}
+.value__img {
+  margin-bottom: rem(16);
+}
+.value__title {
+  margin-bottom: rem(8);
+  font-size: rem(20);
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: var(--font-accent);
+}
+.value__desc {
+  color: #6c7275;
+  font-size: rem(14);
+  line-height: 1.714285714285714;
+}

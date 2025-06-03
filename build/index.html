@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SereniTea</title>
+		<!-- Вставь это в <head> -->
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.css" />
-
 		<link rel="icon" type="image/png" href="./img/favicon/leaf.png" />
 	</head>
 
@@ -39,7 +40,7 @@
 		<nav class="nav">
 			<div class="container">
 				<div class="nav__row">
-					<a href="" class="nav__logo logo">sereni<span>Tea</span></a>
+					<a href="" class="nav__logo logo">Sereni<span>Tea</span></a>
 
 					<ul class="nav__list">
 						<li class="nav__item">
@@ -948,10 +949,113 @@
 				</div>
 			</div>
 		</div>
+		<section class="promotion">
+			<div class="promotion__container">
+				<div class="promotion__content">
+					<div class="promotion__desc">
+						<p class="promotion__tagline">PROMOTION</p>
+						<h2 class="promotion__title">Hurry up! 40%&#160;OFF</h2>
+						<div class="promotion__text">
+							<p>Sip More, Spend Less&#160;&#8212; Tea Sale On&#160;Now!</p>
+						</div>
+					</div>
+
+					<div class="promotion__timer">
+						<p class="promotion__expires">Offer expires in:</p>
+						<div class="timer">
+							<div class="timer__el">
+								<div class="timer__value" id="days"></div>
+								<div class="timer__desc">Days</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="hours"></div>
+								<div class="timer__desc">Hours</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="minutes"></div>
+								<div class="timer__desc">Minutes</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="seconds"></div>
+								<div class="timer__desc">Seconds</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="promotion__btn">
+						<a href="#!" class="btn btn--small">Shop now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="values">
+			<div class="container">
+				<div class="values__grid">
+					<div class="value">
+						<img class="value__img" src="./img/values/shipping.svg" alt="" />
+						<h4 class="value__title">Free Shipping</h4>
+						<p class="value__desc">Order above $200</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/finance.svg" alt="" />
+						<h4 class="value__title">Money-back</h4>
+						<p class="value__desc">30 days guarantee</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/lock.svg" alt="" />
+						<h4 class="value__title">Secure Payments</h4>
+						<p class="value__desc">Secured by&#160;Stripe</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/call.svg" alt="" />
+						<h4 class="value__title">24/7 Support</h4>
+						<p class="value__desc">Phone and Email support</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="newsletter">
+			<div class="newsletter__content">
+				<h2 class="newsletter__title headline-4">Join Our Newsletter</h2>
+				<p class="newsletter__desc">Sign up&#160;for deals, new products and promotions</p>
+
+				<form action="" class="form-newsletter">
+					<img src="./img/icons/email.svg" alt="Email" />
+					<input type="text" class="form-newsletter__input" placeholder="Email address" />
+					<button type="submit" class="form-newsletter__submit">Signup</button>
+				</form>
+			</div>
+		</section>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__copyright">
-					<p>Сборка сделана в&#160;школе <a href="https://webcademy.ru" target="_blank">webcademy.ru</a></p>
+				<div class="footer__row footer__row-top">
+					<div class="footer__title">
+						<div class="footer__logo">SereniTea</div>
+						<div class="footer__separator"></div>
+						<div class="footer__store">Tea Store</div>
+					</div>
+					<ul class="footer__nav">
+						<li><a href="#!">Home</a></li>
+						<li><a href="#!">Shop</a></li>
+						<li><a href="#!">Product</a></li>
+						<li><a href="#!">Blog</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__row footer__row--border">
+					<div class="footer__copyrights">
+						<p>Copyright &#169; 2025 SereniTea. All rights reserved</p>
+						<a href="#!">Privacy Policy</a>
+						<a href="#!">Terms of&#160;Use</a>
+					</div>
+
+					<div class="footer__socials">
+						<a href="#!"><img src="./img/socials/instagram.svg" alt="Social"/></a>
+						<a href="#!"><img src="./img/socials/facebook.svg" alt="Social"/></a>
+						<a href="#!"><img src="./img/socials/youtube.svg" alt="Social"/></a>
+					</div>
 				</div>
 			</div>
 		</footer>

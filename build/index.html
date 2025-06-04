@@ -27,20 +27,25 @@
 			</a>
 
 			<button class="tagline__close">
-				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					<path
 						fill-rule="evenodd"
 						clip-rule="evenodd"
 						d="M15.4419 5.44194C15.686 5.19786 15.686 4.80214 15.4419 4.55806C15.1979 4.31398 14.8021 4.31398 14.5581 4.55806L10 9.11612L5.44194 4.55806C5.19786 4.31398 4.80214 4.31398 4.55806 4.55806C4.31398 4.80214 4.31398 5.19786 4.55806 5.44194L9.11612 10L4.55806 14.5581C4.31398 14.8021 4.31398 15.1979 4.55806 15.4419C4.80214 15.686 5.19786 15.686 5.44194 15.4419L10 10.8839L14.5581 15.4419C14.8021 15.686 15.1979 15.686 15.4419 15.4419C15.686 15.1979 15.686 14.8021 15.4419 14.5581L10.8839 10L15.4419 5.44194Z"
-						fill="#4c7a02"
 					/>
 				</svg>
 			</button>
+			<a href="#!" class="tagline__link-overlay"></a>
 		</div>
 		<nav class="nav">
 			<div class="container">
 				<div class="nav__row">
-					<a href="" class="nav__logo logo">Sereni<span>Tea</span></a>
+					<div class="nav__logo">
+						<button class="nav__btn-mobile-nav" id="mobile-nav-btn">
+							<img src="./img/icons/menu.svg" alt="Navigation" />
+						</button>
+						<a href="" class="nav__logo logo">Sereni<span>Tea</span></a>
+					</div>
 
 					<ul class="nav__list">
 						<li class="nav__item">
@@ -58,10 +63,10 @@
 					</ul>
 
 					<div class="nav__btns">
-						<button class="nav__btn">
+						<button class="nav__btn nav__btn--search">
 							<img src="./img/icons/search.svg" alt="Search" />
 						</button>
-						<button class="nav__btn">
+						<button class="nav__btn nav__btn--user">
 							<img src="./img/icons/user.svg" alt="User" />
 						</button>
 						<button class="nav__btn">
@@ -72,6 +77,74 @@
 				</div>
 			</div>
 		</nav>
+		<div class="mobile-nav">
+			<!-- mobile-nav__top -->
+			<div class="mobile-nav__top">
+				<div class="mobile-nav__header">
+					<a href="#!" class="logo logo--small">3legant<span>.</span></a>
+					<button id="close-mobile-nav">
+						<img src="./img/icons/close-nav.svg" alt="Close" />
+					</button>
+				</div>
+
+				<form class="mobile-nav__search">
+					<div class="mobile-nav__search-label">
+						<img src="./img/icons/search.svg" alt="Search" />
+						<input class="mobile-nav__search-input" type="text" placeholder="Search" />
+					</div>
+				</form>
+
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item">
+						<a href="#!" class="mobile-nav__link">Home</a>
+					</li>
+					<li class="mobile-nav__item">
+						<button href="#!" class="mobile-nav__link">Shop <img src="./img/icons/chevron-down.svg" alt="arrow" /></button>
+					</li>
+					<li class="mobile-nav__item">
+						<button href="#!" class="mobile-nav__link">Product <img src="./img/icons/chevron-down.svg" alt="arrow" /></button>
+					</li>
+					<li class="mobile-nav__item">
+						<a href="#!" class="mobile-nav__link">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<!-- // mobile-nav__top -->
+
+			<!-- mobile-nav__bottom -->
+			<div class="mobile-nav__bottom">
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item mobile-nav__item--gray">
+						<a href="#!" class="mobile-nav__link mobile-nav__link--gray"
+							>Cart
+							<span class="nav__btn">
+								<img src="./img/icons/cart.svg" alt="Cart" />
+								<span class="nav__btn-count nav__btn-count--white">2</span>
+							</span>
+						</a>
+					</li>
+					<li class="mobile-nav__item mobile-nav__item--gray">
+						<a href="#!" class="mobile-nav__link mobile-nav__link--gray"
+							>Wishlist
+							<span class="nav__btn">
+								<img src="./img/icons/heart.svg" alt="Cart" />
+								<span class="nav__btn-count nav__btn-count--white">2</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<a href="#!" class="btn btn--wide">Sign In</a>
+
+				<div class="mobile-nav__socials">
+					<a href="#!"><img src="./img/socials-black/instagram.svg" alt="Social"/></a>
+					<a href="#!"><img src="./img/socials-black/facebook.svg" alt="Social"/></a>
+					<a href="#!"><img src="./img/socials-black/youtube.svg" alt="Social"/></a>
+				</div>
+			</div>
+			<!-- // mobile-nav__bottom -->
+		</div>
+		<div class="mobile-nav-fade"></div>
 		<section class="hero">
 			<div class="container hero__container">
 				<div class="hero__content">
@@ -144,7 +217,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
 										<div class="card__price">$1.2</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -183,7 +256,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
+										<h3 class="card__title card__title--elipsis">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
 										<div class="card__price">$1.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -228,7 +301,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
 										<div class="card__price">$2.7</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -271,7 +344,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
 										<div class="card__price">$2.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -316,7 +389,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
 										<div class="card__price">$1.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -361,7 +434,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
 										<div class="card__price">$1.2</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -400,7 +473,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
+										<h3 class="card__title card__title--elipsis">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
 										<div class="card__price">$1.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -445,7 +518,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
 										<div class="card__price">$2.7</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -488,7 +561,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
 										<div class="card__price">$2.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -533,7 +606,7 @@
 
 											<img src="./img/icons/star.svg" alt="star" />
 										</div>
-										<h3 class="card__title">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
+										<h3 class="card__title card__title--elipsis">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
 										<div class="card__price">$1.5</div>
 									</div>
 									<a href="#!" class="card__link"></a>
@@ -597,7 +670,7 @@
 		<div class="bestseller">
 			<div class="container">
 				<div class="bestseller__title">
-					<h2 class="headline-4">Best Seller</h2>
+					<h2 class="headline-4">Best Sellers</h2>
 				</div>
 				<div class="bestseller__cards">
 					<div class="swiper-slide">
@@ -639,7 +712,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
+								<h3 class="card__title card__title--elipsis">Lu&#160;Yin Luo&#160;&#8212; Emerald Pearl Green Tea</h3>
 								<div class="card__price">$1.2</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -678,7 +751,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
+								<h3 class="card__title card__title--elipsis">Temple of&#160;Heaven Gunpowder&#160;&#8212; Zhu Cha</h3>
 								<div class="card__price">$1.5</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -723,7 +796,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
+								<h3 class="card__title card__title--elipsis">Tai Ping Hou Kui&#160;&#8212; Monkey King Green Tea</h3>
 								<div class="card__price">$2.7</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -766,7 +839,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
+								<h3 class="card__title card__title--elipsis">Little Dragon Pearl&#160;&#8212; L&#252; Long Zhu Green Tea</h3>
 								<div class="card__price">$2.5</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -811,7 +884,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
+								<h3 class="card__title card__title--elipsis">Zhen Luo&#160;&#8212; Delicate Very Soft Green Tea</h3>
 								<div class="card__price">$1.5</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -856,7 +929,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Liu An&#160;Gua Pian&#160;&#8212; Green Tea</h3>
+								<h3 class="card__title card__title--elipsis">Liu An&#160;Gua Pian&#160;&#8212; Green Tea</h3>
 								<div class="card__price">$1.9</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -895,7 +968,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">L&#252; Yu&#160;Huan&#160;&#8212; Jade Ring Tea</h3>
+								<h3 class="card__title card__title--elipsis">L&#252; Yu&#160;Huan&#160;&#8212; Jade Ring Tea</h3>
 								<div class="card__price">$2.8</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -940,7 +1013,7 @@
 
 									<img src="./img/icons/star.svg" alt="star" />
 								</div>
-								<h3 class="card__title">Kuding Tea&#160;&#8212; Jin Shan Liu Shui Edition</h3>
+								<h3 class="card__title card__title--elipsis">Kuding Tea&#160;&#8212; Jin Shan Liu Shui Edition</h3>
 								<div class="card__price">$2.8</div>
 							</div>
 							<a href="#!" class="card__link"></a>
@@ -988,6 +1061,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="values">
 			<div class="container">
 				<div class="values__grid">
@@ -1014,7 +1088,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="newsletter">
 			<div class="newsletter__content">
 				<h2 class="newsletter__title headline-4">Join Our Newsletter</h2>
@@ -1047,8 +1120,10 @@
 				<div class="footer__row footer__row--border">
 					<div class="footer__copyrights">
 						<p>Copyright &#169; 2025 SereniTea. All rights reserved</p>
-						<a href="#!">Privacy Policy</a>
-						<a href="#!">Terms of&#160;Use</a>
+						<p class="footer__copyrights-links">
+							<a href="#!">Privacy Policy</a>
+							<a href="#!">Terms of&#160;Use</a>
+						</p>
 					</div>
 
 					<div class="footer__socials">

@@ -1,7 +1,12 @@
+@use "./base/index" as *;
 .headline-4 {
   font-size: rem(40);
   font-weight: 500;
   line-height: 1.1;
   font-family: var(--font-accent);
   letter-spacing: -0.4px;
+
+  @include mobile {
+    font-size: rem(34);
+  }
 }

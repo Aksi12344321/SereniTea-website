@@ -4,12 +4,19 @@ function swiper() {
   const swiper = new Swiper(".swiper", {
     // slidesPerView: 5,
     slidesPerView: "auto",
-    spaceBetween: 24,
+    spaceBetween: 12,
 
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      // dynamicBullets: true,
+    },
+
+    breakpoints: {
+      840: {
+        spaceBetween: 24,
+      },
     },
 
     // Navigation arrows

@@ -1,3 +1,6 @@
+@use "mixins" as *;
+@use "functions" as *;
+
 :root {
   --container-width: #{rem(1184)};
   --container-padding: #{rem(32)};
@@ -21,10 +24,4 @@
 .dark {
   --page-bg: #252526;
   --text-color: #fff;
-}
-
-@mixin mediaBg() {
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    @content;
-  }
 }

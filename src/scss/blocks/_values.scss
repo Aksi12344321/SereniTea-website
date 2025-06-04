@@ -1,12 +1,7 @@
+@use "./base/index" as *;
 .values {
   padding: rem(40) 0;
 }
-
-// .values__grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
-//     gap: 24px;
-// }
 
 .values__grid {
   display: flex;
@@ -16,5 +11,16 @@
   & > * {
     flex: 1;
     min-width: rem(262);
+  }
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: rem(24) rem(8);
+
+    & > * {
+      flex: none;
+      min-width: auto;
+    }
   }
 }

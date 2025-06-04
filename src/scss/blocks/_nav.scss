@@ -1,3 +1,4 @@
+@use "./base/index" as *;
 .nav {
   padding: rem(16) 0;
   background-color: #e0dede;
@@ -9,10 +10,27 @@
   justify-content: space-between;
 }
 
+.nav__logo {
+  display: flex;
+  gap: rem(4);
+  align-items: center;
+}
+
+.nav__btn-mobile-nav {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
 .nav__list {
   display: flex;
   align-items: center;
   gap: rem(40);
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav__link {
@@ -33,6 +51,13 @@
   display: flex;
   align-items: center;
   gap: rem(5);
+}
+
+.nav__btn--search,
+.nav__btn--user {
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav__btn-count {

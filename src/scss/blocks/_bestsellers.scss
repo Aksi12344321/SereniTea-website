@@ -1,14 +1,36 @@
+@use "./base/index" as *;
 .bestseller {
   padding-bottom: rem(100);
 }
 
 .bestseller__title {
   padding-bottom: rem(48);
+
+  @include mobile {
+    padding: 0px 0 rem(16);
+    text-align: center;
+  }
 }
 
 .bestseller__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr)); //показывает столько картинок, сколько вписывается
   gap: rem(48) rem(24);
   align-items: flex-start;
+
+  @include tablet {
+    justify-items: center;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(24);
+    justify-items: center;
+  }
+
+  @include mobile-s {
+    grid-template-columns: 1fr; // одна карточка на строку
+    gap: rem(16);
+    justify-items: center; //чтобы внутренние элементы (карточки) стояли по центру.
+  }
 }

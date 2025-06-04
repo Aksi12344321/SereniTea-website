@@ -1,17 +1,8 @@
 /* Base */
-@import "./base/reset";
-@import "./base/functions";
-@import "./base/vars";
-@import "./base/mixins";
-@import "./base/fontsAutoGen";
-@import "./base/base";
-@import "./base/docs"; /* Отключить при необходимости */
-@import "./base/utils"; // Тест на ошибку
-@import "./base/containers";
-@import "./base/sticky-footer";
+@use "./base/index" as *;
 
 /* Blocks */
-@import "./blocks/*.scss";
+@use "./blocks/index" as *;
 
 /* No styles code below. Only in modules */
 /* Не пишите CSS код ниже. Только в подключаемых файлах */

@@ -1,5 +1,6 @@
+@use "./base/index" as *;
 .arrivals {
-  padding: 48px 0;
+  padding: rem(48) 0;
 }
 
 .arrivals__row {
@@ -7,19 +8,16 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 48px;
-}
-
-.arrivals__title {
-}
-
-.headline-4 {
+  margin-bottom: rem(48);
 }
 
 .arrivals__dots {
+  @include mobile {
+    display: none;
+  }
 }
 
 .arrivals__slider {
   display: flex;
-  gap: 24px;
+  gap: rem(24);
 }

@@ -1,7 +1,19 @@
+@use "sass:math";
+@use "functions" as *;
+
 $laptop: 1440.98;
 $tablet: 1023.98;
 $mobile: 767.98;
-$mobile-s: 480.98;
+$mobile-s: 539.98;
+$mini: 349.98;
+
+/* $mobile-s: 480.98; */
+
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
 
 @mixin laptop-above {
   @media (width > rem($laptop)) {
@@ -47,6 +59,12 @@ $mobile-s: 480.98;
 
 @mixin mobile-s {
   @media (width <= rem($mobile-s)) {
+    @content;
+  }
+}
+
+@mixin mini {
+  @media (width <= rem($mini)) {
     @content;
   }
 }

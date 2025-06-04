@@ -1,5 +1,6 @@
+@use "./base/index" as *;
 .hero {
-  height: rem(820);
+  height: rem(820); //задаем размер, так как фоновая картинка сожмется до размера контента без этого
   background-color: #f7f7f7;
   background-image: url("./../img/hero/bg.jpg");
   background-position: center center; /* x y */
@@ -14,9 +15,7 @@
     height: rem(500);
   }
   @include mobile {
-    padding-bottom: rem(390);
-
-    background-image: url("./../img/hero/bg.jpg");
+    height: auto; //так как задавали height: rem(820);
   }
 }
 

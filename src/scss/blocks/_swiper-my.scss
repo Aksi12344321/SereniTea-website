@@ -1,12 +1,17 @@
+@use "./base/index" as *;
 .swiper-slide {
-  width: 262px !important;
+  width: rem(262) !important;
+
+  @include mobile {
+    width: rem(231) !important;
+  }
 }
 
 .swiper-pagination {
-  position: static !important;
+  position: relative !important;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: rem(8);
 }
 
 .swiper-pagination-bullet {
@@ -16,8 +21,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 16px;
-  height: 16px;
+  width: rem(16);
+  height: rem(16);
   border-radius: 50%;
 
   border: 1px solid transparent;
@@ -27,8 +32,8 @@
   &::before {
     content: "";
     display: block;
-    width: 8px;
-    height: 8px;
+    width: rem(8);
+    height: rem(8);
     border-radius: 50%;
     background-color: #6c7275;
     transition: all 0.2s ease-in;
@@ -41,4 +46,8 @@
   &::before {
     background-color: #141718;
   }
+}
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
 }

@@ -1,10 +1,13 @@
+@use "./base/index" as *;
+
 .promotion {
   position: relative;
   background-color: rgba(248, 168, 9, 0.7);
   display: grid;
   gap: rem(24);
 
-  &::before {
+  &::after {
+    //поставили after, так как с position: absolute это неважно, а на мобильной версии будет идти следом
     content: "";
     display: block;
     width: 50%;
@@ -20,6 +23,12 @@
 
     @include mediaBg() {
       background-image: url("./../img/promotion/bg@2x.jpg");
+    }
+
+    @include mobile {
+      position: static;
+      height: rem(367);
+      width: 100%;
     }
   }
 }
@@ -52,6 +61,8 @@
 
   @include mobile {
     padding: rem(28) 0;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -74,12 +85,20 @@
   letter-spacing: -0.4px;
   line-height: 1.1;
   font-family: var(--font-accent);
+
+  @include mobile {
+    font-size: rem(34);
+  }
 }
 
 .promotion__text {
   color: #121212;
   font-size: rem(20);
   line-height: 1.6;
+
+  @include mobile {
+    font-size: rem(14);
+  }
 }
 
 .promotion__timer {

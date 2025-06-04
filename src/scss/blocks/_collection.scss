@@ -1,16 +1,28 @@
+@use "./base/index" as *;
 .collection {
   margin-bottom: rem(100);
   background-color: #f6f6f6;
   border-radius: rem(4);
-  padding-bottom: rem(100);
+  padding-bottom: rem(50);
 }
 
 .collection__title {
   padding: rem(48) 0;
+
+  @include mobile {
+    text-align: center;
+    padding: rem(40) 0 rem(16);
+  }
 }
 
 .collection__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(24);
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-auto-rows: rem(240);
+    gap: rem(16);
+  }
 }
